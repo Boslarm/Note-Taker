@@ -1,4 +1,4 @@
-//re quire express
+//require express
 const express = require('express');
 
 //connect api routes

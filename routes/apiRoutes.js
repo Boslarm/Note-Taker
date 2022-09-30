@@ -30,5 +30,15 @@ note.post('/', (req, res) => {
 });
 
 //delete data from db and display deletion on front end
+note.delete('/:id', (req, res) => {
+    const Id = req.params.id;
+    readFromFile('./db/db.json') //read saved notes
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+        const result = json.filter((note) => note.id !== Id); //filter out old note and create new array with other notes
+        writeToFile('./db/db.json', result); //save that array
+        res.json(`Note ${Id} deleted`);
+    });
+});
 
-module.exports = note; 
+module.exports = note;
