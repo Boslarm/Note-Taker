@@ -1,4 +1,4 @@
-//helper code from classwork
+//helper code from classwork so i don't have to write so many lines of code
 const fs = require('fs');
 const util = require('util');
 
