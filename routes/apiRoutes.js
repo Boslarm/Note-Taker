@@ -10,18 +10,18 @@ note.get('/', (req, res) => {
 });
 //get data from front end
 note.post('/', (req, res) => {
-    console.log(req.body);
+    console.log(req.body); //displays object note in console
 
-    const { title, text } =req.body;
+    const { title, text } = req.body;
 
     if (req.body) {
         const newNote = {
             title, 
             text, 
-            id: uuidv4(),
+            id: uuidv4(),//assigns unique id to note
         };
         //save note to db
-        console.log(newNote);
+        console.log(newNote); //displays note with new id in console
         readAndAppend(newNote, './db/db.json'); //add data to array in db
         res.json('Success! Note Added.')
     } else {

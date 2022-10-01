@@ -1,6 +1,17 @@
 # Note-Taker
 
 ## Description
+For this assignment we were tasked with creating an application called Note Taker that can be used to write and save notes. This application uses an Express.js back end and saves and retrieve note data from a JSON file. We were also asked for a bonus to allow the functionality of deletion as well.
+
+## Live Links
+[Heroku](https://mighty-gorge-37861.herokuapp.com/)
+
+[GitHub Pages](https://boslarm.github.io/Note-Taker/)
+
+## Screenshots
+![Webpage Screenshot](./assets/Home%20Screen.jpg)
+![Webpage Screenshot](./assets/Note%20Screen.jpg)
+![Webpage Screenshot](./assets/Notes.jpg)
 
 ## User Story
 AS A small business owner
